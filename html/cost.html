@@ -7,8 +7,15 @@
     <script src="http://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="../js/cost.js"></script>
     <script src="../js/common.js"></script>
-</head>
+  </head>
 <body>
+  <div id="map" style="width:0%; height: 0vh;"></div>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcNTKMnmKiWdw6dqG52foWhuAMhXajWcU&callback=initMap&libraries=&v=weekly"
+  defer
+></script>
+<div id="output"></div>
+<div id="map"></div>
     <div class="container">
     <div class="header">
         <img src="../images/logo.png" class="logo"/>
@@ -39,7 +46,7 @@
                 <label class="check_label" id="check_label3" value="Congestion">혼잡 Congestion (AM 6:30 ~ AM9:30, PM 5:30 ~ PM 8:30)</label>
               </div>
             </div>
-              <img src="../images/play.png" id="play_btn"/>
+              <img src="../images/play.png" id="play_btn" />
         </div>
         <div class="right">
             <img src="../images/price_prediction.png" id="price_prediction"/>
